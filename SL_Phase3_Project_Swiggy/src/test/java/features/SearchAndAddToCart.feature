@@ -48,7 +48,7 @@ Then User selects a Product and clicks on ADD button
 Then verify that product is added to cart and view cart icon is displayed
 Then Verify that product and quantity dispalyed is same as what user selected
 |	ProductName	| Quantity |
-| Classic Cold Coffee	| 1|
+| King Fries	| 1|
 
 
 

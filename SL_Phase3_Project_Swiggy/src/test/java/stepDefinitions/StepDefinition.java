@@ -229,7 +229,7 @@ public class StepDefinition {
 		// driver.findElement(By.xpath("//h3[@class='styles_itemNameText__3ZmZZ' and
 		// contains(text(),'Classic Cold Coffee') ]"));
 		WebElement addProduct = driver.findElement(
-				By.xpath("//*[@id=\"cid-BK_Cafe\"]/div[1]/div/div[15]/div[1]/div/div[2]/div[2]/div/div[1]"));
+				By.xpath("//*[@id=\"cid-Sides___Beverage\"]/div[1]/div/div[5]/div[1]/div/div[2]/div[2]/div/div[1]"));
 		driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		addProduct.click();
 		logger.pass("User is able to add a selected product to cart successfully");
@@ -239,7 +239,7 @@ public class StepDefinition {
 	public void verify_that_product_is_added_to_cart_and_view_cart_icon_is_displayed() {
 
 		WebElement viewCart = driver.findElement(
-				By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div[2]/div[23]/div[2]/button/span/span[2]/span"));
+				By.xpath("//*[@id=\"view-cart-btn\"]/span/span[2]/span"));
 
 		if (viewCart.isDisplayed()) {
 			System.out.println("Cart Icon is Displayed");
